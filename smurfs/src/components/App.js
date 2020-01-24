@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Smurfs from './Smurfs';
 import Add from './Add';
+import Clear from './Clear';
 class App extends Component {
   render() {
     return (
@@ -12,6 +13,7 @@ class App extends Component {
         <div>Have fun!</div> */}
         <Add />
         <Smurfs />
+        <Clear />
       </div>
     );
   }

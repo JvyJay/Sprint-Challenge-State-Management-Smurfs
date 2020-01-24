@@ -45,13 +45,11 @@ const reducer = (state = initialState, action) => {
     case POST_FAIL:
       return {
         ...state,
-        added: false
+        added: true
       };
     case SMURF_CLEAR:
       return {
-        ...state,
-        smurfs: [],
-        added: false
+        state
       };
     default:
       return state;

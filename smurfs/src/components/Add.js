@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { postSmurf, clear } from '../actions';
+import { postSmurf } from '../actions';
 import { connect } from 'react-redux';
 
 const Add = props => {
@@ -54,7 +54,6 @@ const Add = props => {
           onChange={handleHeight}
         />
         <button>Submit</button>
-        <button onClick={props.clear}>Clear</button>
       </form>
     </>
   );
@@ -64,4 +63,4 @@ const mapStateToProps = state => {
   return {};
 };
 
-export default connect(mapStateToProps, { postSmurf, clear })(Add);
+export default connect(mapStateToProps, { postSmurf })(Add);
